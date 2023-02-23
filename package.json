@@ -1,0 +1,12 @@
+{
+  "name": "01-ede-creer-un-site-web-avec-html-css-et-bootstrap-gdwfshtmlcssbootexaiii1a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "rm -rf ./src/css & sass --watch ./src/scss/styles.scss  ./src/css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
