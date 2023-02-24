@@ -1,1 +1,29 @@
+* {
+  box-sizing: border-box;
+}
 
+html {
+  background: url(/src/assets/img/png/stars-3750824_1280.png) center center repeat;
+  background-size: 38rem;
+}
+
+body {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+header {
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  height: 56px;
+}
+
+footer {
+  width: 100vw;
+  height: 56px;
+  background-color: rgb(165, 128, 42);
+}
