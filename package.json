@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "rm -rf ./src/css & sass --watch ./src/scss/styles.scss  ./src/css/styles.css"
+    "sass": "rm -rf ./src/css & sass --watch --no-source-map ./src/scss/styles.scss  ./src/css/styles.css"
   },
   "keywords": [],
   "author": "",
