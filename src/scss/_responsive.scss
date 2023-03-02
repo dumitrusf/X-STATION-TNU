@@ -1,0 +1,24 @@
+$breakpoints: (
+  tablet: 720px,
+  laptop: 1280px,
+);
+
+@mixin responsive($key) {
+  @if mas-has-key($breakpoints, $key) {
+    @media screen and (min-width: map-get($breakpoints, $key)) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: $key) {
+      @content;
+    }
+  }
+}
+
+
+// anadir @include en alguna regla o incluir @include sin mas y dentro de @include poner todo lo que hacemos de tablet por ejemplo
+
+// @include responsive(desktop) {
+//   background-color: red;
+// }
+//  por ejemplo

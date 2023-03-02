@@ -1,8 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import "fonts";
+
+@import "responsive";
 
 html {
   background: url(/src/assets/img/png/stars-3750824_1280.png) center center
@@ -25,27 +23,12 @@ body {
 
 .navbar {
   padding: 0;
-  background-color: antiquewhite;
-  width: 100vw;
-  display: inline-flex;
-  justify-content: center;
-  height: 3.5rem;
-  background: radial-gradient(
-    50% 3% at 50% 1%,
-    #ffffff 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
 
   &__div {
-    margin-top: 0;
-    height: 3.5rem;
-    width: 100vw;
-    padding: 0px;
-    margin: 0;
     background-color: transparent;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     list-style-type: none;
     background: linear-gradient(
@@ -61,38 +44,59 @@ body {
   }
 
   &__ul {
-    margin: 0;
-    height: 3.5rem;
-    width: 100vw;
-    padding: 0px;
-    margin: 0;
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    font-family: inter-regular;
+    width: 100%;
     list-style-type: none;
-  }
-
-  &__img {
-    height: 100px;
-    width: 110px;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+    background: radial-gradient(
+      50% 3% at 50% 1%,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
   }
 
   &__svg {
     height: 50px;
     width: 60px;
-    filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
-    -webkit-filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));
   }
 
-  &__svg--big{
-    height: 100px;
-    width: 110px;
-}
+  &__svg--big {
+    width: 122px;
+    height: 24px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px 0px white, inset 0px 0px 3px 0px white;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+  }
 }
 
+.menu {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 0px;
 
+  &__svg {
+    width: 90px;
+    height: 90px;
+  }
+
+  &__list a {
+    font-family: "arialrg", arial-fonts;
+  }
+}
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
 
 footer {
   width: 100vw;

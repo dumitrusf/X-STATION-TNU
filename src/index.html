@@ -47,24 +47,32 @@
       rel="stylesheet"
       href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    
+    <!-- Normalize installed -->
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
 
+
+    <!-- reset installed -->
+    <link rel="stylesheet" href="/node_modules/reset-css/reset.css">
+    
     <!-- My CSS -->
     <link rel="stylesheet" href="/src/css/styles.css" />
+    
   </head>
 
   <body>
     <nav class="navbar navbar-expand-md navbar-dark ">
       <div class="navbar__div container-xs d-flex">
        <ul class="navbar__ul">
-         <li class="wrapper navbar__li">
+         <li class="navbar__li">
            <a href="https://www.playstation.com/en-us/" target="_blank" rel="noopener">
-             <img class="navbar__svg  " src="/src/assets/img/svg/ps-svg-logo.svg" class="navbar-brand"></img>
+             <img class="navbar__svg  " src="/src/assets/img/svg/ps-svg-logo.svg">
            </a>
          </li>
  
          <li>
            <button
-           class="navbar-toggler"
+           class="button-nav navbar-toggler"
            type="button"
            data-bs-toggle="collapse"
            data-bs-target="#navbarSupportedContent"
@@ -72,20 +80,22 @@
            aria-expanded="false"
            aria-label="Toggle navigation"
            >
-             <img class="navbar__svg--big" src="/src/assets/img/svg/xstationlogoheader.svg" alt="New logo x-station">
+             <img class="navbar__svg navbar__svg--big" src="/src/assets/img/svg/xstationlogoheader.svg" alt="New logo x-station">
            </button>
          </li>
  
          <li>
            <a href="https://www.xbox.com/en-US/" target="_blank" rel="noopener">
-             <img class="navbar__svg" src="/src/assets/img/svg/xbox-svg-logo.svg" class="navbar-brand"></img>
+             <img class="navbar__svg" src="/src/assets/img/svg/xbox-svg-logo.svg">
            </a>
          </li>
        </ul>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
+          <img class="menu__svg--PS" src="/src/assets/img/svg/ps-svg-logo-grey.svg" alt="">
+          <ul class="menu__list navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">XBOX </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -113,7 +123,7 @@
               <a class="nav-link disabled">Disabled</a>
             </li>
           </ul>
-          
+          <img class="menu__svg--XB" src="/src/assets/img/svg/xbox-svg-logo-gray.svg" alt="">
         </div>
       </div>
     </nav>
